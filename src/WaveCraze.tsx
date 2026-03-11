@@ -13,7 +13,8 @@ import {
   Facebook,
   ChevronRight,
   Menu,
-  X
+  X,
+  Linkedin
 } from 'lucide-react';
 
 // --- Components ---
@@ -187,11 +188,11 @@ const Hero = () => {
         >
           <div className="flex items-center gap-2 text-gray-300">
             <Calendar size={20} className="text-fire-red" />
-            <span className="tracking-widest uppercase text-xs font-semibold">Dec 19 - 21, 2025</span>
+            <span className="tracking-widest uppercase text-xs font-semibold">March 13 - 14, 2026</span>
           </div>
           <div className="flex items-center gap-2 text-gray-300">
             <MapPin size={20} className="text-fire-red" />
-            <span className="tracking-widest uppercase text-xs font-semibold">Main Arena, Tech Campus</span>
+            <span className="tracking-widest uppercase text-xs font-semibold">SAC</span>
           </div>
         </motion.div>
 
@@ -231,18 +232,9 @@ const About = () => {
             WaveCraze is not just a fest; it's a rebirth. Inspired by the raw power of fire and the haunting beauty of ash, this year's theme challenges you to push beyond your limits.
           </p>
           <p className="text-gray-400 leading-relaxed mb-8">
-            Join thousands of creators, innovators, and performers as we ignite the stage and leave behind a legacy that will never fade. From high-octane technical battles to soul-stirring cultural performances, WaveCraze is where the heat meets the beat.
+            Join creators, innovators, and performers as we ignite the stage and leave behind a legacy that will never fade. From high-octane technical battles to soul-stirring cultural performances, WaveCraze is where the heat meets the beat.
           </p>
-          <div className="grid grid-cols-2 gap-8">
-            <div>
-              <div className="text-4xl font-bold text-fire-red mb-1">50+</div>
-              <div className="text-xs uppercase tracking-widest text-gray-500 font-bold">Events</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-fire-red mb-1">10k+</div>
-              <div className="text-xs uppercase tracking-widest text-gray-500 font-bold">Attendees</div>
-            </div>
-          </div>
+      
         </motion.div>
         
         <motion.div 
@@ -305,10 +297,10 @@ const EventCard = ({ title, category, icon: Icon, image }: EventCardProps) => {
 
 const Events = () => {
   const events = [
-    { title: "Inferno Beats", category: "Music", icon: Music, image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2070&auto=format&fit=crop" },
-    { title: "Ash-Tech Hack", category: "Technical", icon: Zap, image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop" },
-    { title: "Ember Dance", category: "Cultural", icon: Wind, image: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=2070&auto=format&fit=crop" },
-    { title: "Firestorm Gaming", category: "Esports", icon: Zap, image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop" },
+    { title: "Glam It Up", category: "", icon: Music, image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2070&auto=format&fit=crop" },
+    { title: "TalentX", category: "", icon: Zap, image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop" },
+    { title: "Comedy Night", category: "", icon: Wind, image: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=2070&auto=format&fit=crop" },
+   // { title: "Firestorm Gaming", category: "Esports", icon: Zap, image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop" },
   ];
 
   return (
@@ -344,20 +336,18 @@ const Schedule = () => {
   const days = [
     { 
       day: "Day 01", 
-      date: "Dec 19", 
+      date: "March 13", 
       events: [
-        { time: "10:00 AM", title: "Opening Ceremony: The Spark", location: "Main Hall" },
-        { time: "02:00 PM", title: "Ash-Tech Hackathon Begins", location: "Lab 404" },
-        { time: "06:00 PM", title: "Inferno Beats: DJ Night", location: "Open Grounds" },
+        { time: "10:00 AM", title: "Glam it Up", location: "SAC" },
+  
       ]
     },
     { 
       day: "Day 02", 
-      date: "Dec 20", 
+      date: "March 14", 
       events: [
-        { time: "11:00 AM", title: "Ember Dance Battles", location: "Auditorium" },
-        { time: "03:00 PM", title: "Firestorm Gaming Finals", location: "Arena" },
-        { time: "07:00 PM", title: "Cultural Night: Ash & Soul", location: "Main Stage" },
+        { time: "11:00 AM", title: "TalentX", location: "SAC" },
+    
       ]
     }
   ];
@@ -417,7 +407,7 @@ const Team = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h3 className="text-fire-red font-bold uppercase tracking-widest text-sm mb-4">The Architects</h3>
-          <h2 className="text-5xl font-display italic">Meet the Council</h2>
+          <h2 className="text-5xl font-display italic">Meet the Members</h2>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -474,26 +464,27 @@ const Footer = () => {
           <div>
             <h5 className="text-white uppercase tracking-widest font-bold text-sm mb-6">Connect</h5>
             <div className="flex gap-4 mb-8">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-fire-red transition-colors">
+              <a href="https://www.instagram.com/radionitroz.nitdgp" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-fire-red transition-colors">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-fire-red transition-colors">
-                <Twitter size={18} />
+              <a href="https://www.linkedin.com/company/radio-nitroz-nitdgp" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-fire-red transition-colors">
+                <Linkedin size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-fire-red transition-colors">
+              <a href="https://www.facebook.com/radionitroz.nitdgp" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-fire-red transition-colors">
                 <Facebook size={18} />
               </a>
             </div>
             <p className="text-gray-500 text-sm">
-              contact@wavecraze.com<br />
+              https://www.radionitroz.in/<br />
               +91 98765 43210
             </p>
           </div>
         </div>
         
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-600 text-xs uppercase tracking-widest font-bold">
-          <p>© 2025 WaveCraze Fest. All rights reserved.</p>
-          <p>Designed with Passion & Fire</p>
+          <p>© 2026 WaveCraze. All rights reserved.</p>
+          <p>Designed by RNWebD Team.
+          </p>
         </div>
       </div>
     </footer>
