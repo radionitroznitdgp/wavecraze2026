@@ -2,15 +2,38 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'motion/react';
 import { 
   Flame, Music, Zap, Calendar, MapPin,
-  Instagram, Facebook, ChevronRight, Menu, X, Linkedin
+  Instagram, Facebook, ChevronRight, Menu, X, Linkedin, Globe
 } from 'lucide-react';
+import heroBg from './assets/final.jpg';
+import glamit from './assets/glam.png';
+// import sahil from './assets/sai.jpg';
+// import raj from './assets/raj.jpg';
+// import asif from './assets/asif.jpg';
+// import anshul from './assets/anshul.jpeg';
+import talentxImg from './assets/talentx.jpeg';
+import aboutImg from './assets/about.jpg';
+import { Preloader } from './Preloader';
 import sahil from './assets/sai.jpg';
 import raj from './assets/raj.jpg';
 import asif from './assets/asif.jpg';
 import anshul from './assets/anshul.jpeg';
-import talentxImg from './assets/talentx.jpeg';
-import aboutImg from './assets/about.jpg';
-import { Preloader } from './Preloader';
+import jayant from './assets/Jayant.jpg';
+import ramya from './assets/ramya.jpg';
+import rupali from './assets/rupali.jpg';
+import kartikeya from './assets/kar.jpg';
+import  toufeeque from './assets/touf.jpeg';
+import kirthika from './assets/kir.jpg';
+import deepsika from './assets/deep.jpg';
+import anshika from './assets/ansh.jpg';
+import aranb from './assets/arnab.jpg';
+import sanjib from './assets/sanjib.jpeg';
+import pranesh from './assets/pra.jpg';
+import mmss from './assets/mmss.jpeg';
+import sankar from './assets/shankar.jpg';
+import rishita from './assets/rish.jpg';
+import harshada from './assets/harsh.jpg';
+import sarmistha from './assets/sar.jpg';
+
 
 // ─── NAVBAR ───────────────────────────────────────────────────────────────────
 
@@ -104,7 +127,7 @@ const Hero = () => {
   return (
     <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-black">
       <motion.div style={{ y: y1 }} className="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?q=80&w=2070&auto=format&fit=crop"
+        <img src={heroBg}
           alt="Fire background" className="w-full h-full object-cover opacity-60 scale-110" referrerPolicy="no-referrer" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black" />
         <div className="absolute inset-0 ash-overlay" />
@@ -113,7 +136,7 @@ const Hero = () => {
       <div className="relative z-20 text-center px-4 sm:px-6 w-full max-w-5xl mx-auto">
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
           className="text-fire-red uppercase tracking-[0.3em] sm:tracking-[0.5em] font-bold text-xs sm:text-sm mb-3 sm:mb-4">
-          A James Cameron Inspired Fest
+          Radio NITroz Presents
         </motion.p>
         <motion.h1 initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1, ease: 'easeOut' }}
           className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-display italic font-bold tracking-tighter mb-2 fire-glow leading-none">
@@ -129,7 +152,7 @@ const Hero = () => {
           className="mt-8 sm:mt-12 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
           <div className="flex items-center gap-2 text-gray-300">
             <Calendar size={16} className="text-fire-red shrink-0" />
-            <span className="tracking-widest uppercase text-xs font-semibold">March 13 - 14, 2026</span>
+            <span className="tracking-widest uppercase text-xs font-semibold">March 13 2026</span>
           </div>
           <div className="flex items-center gap-2 text-gray-300">
             <MapPin size={16} className="text-fire-red shrink-0" />
@@ -160,7 +183,7 @@ const About = () => (
         <h3 className="text-fire-red font-bold uppercase tracking-widest text-sm mb-3 sm:mb-4">The Legacy</h3>
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display italic mb-6 sm:mb-8">Rising from the Ashes</h2>
         <p className="text-gray-400 leading-relaxed mb-4 sm:mb-6 text-base sm:text-lg">
-          WaveCraze is not just a fest; it's a rebirth. Inspired by the raw power of fire and the haunting beauty of ash, this year's theme challenges you to push beyond your limits.
+          WaveCraze is not just a fest, it's a rebirth. Inspired by the raw power of fire and the haunting beauty of ash, this year's theme challenges you to push beyond your limits.
         </p>
         <p className="text-gray-400 leading-relaxed mb-6 sm:mb-8 text-sm sm:text-base">
           Join creators, innovators, and performers as we ignite the stage and leave behind a legacy that will never fade. From high-octane technical battles to soul-stirring cultural performances, WaveCraze is where the heat meets the beat.
@@ -201,7 +224,7 @@ const EventCard = ({ title, category, icon: Icon, image, link }: EventCardProps)
 
 const Events = () => {
   const events = [
-    { title: 'Glam It Up', category: '', icon: Music, image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2070&auto=format&fit=crop', link: 'https://forms.gle/your-glam-form' },
+    { title: 'Glam It Up', category: '', icon: Music, image: glamit, link: 'https://forms.gle/your-glam-form' },
     { title: 'TalentX', category: '', icon: Zap, image: talentxImg, link: 'https://docs.google.com/forms/d/e/1FAIpQLSdsSbAuMgzJKYlJ56c5IZhr5Hd-MhhLFR2jcfIi6MSriYGLrQ/viewform?usp=header' },
   ];
   return (
@@ -269,19 +292,36 @@ const Schedule = () => {
 
 // ─── TEAM ─────────────────────────────────────────────────────────────────────
 
+
 const Team = () => {
   const members = [
     { name: 'D Sai Sahil', role: 'President', image: sahil },
     { name: 'Mohammed Asif', role: 'General Secretary', image: asif },
     { name: 'Sk Raj Ali', role: 'Vice President', image: raj },
     { name: 'Anshul Kumar Parira', role: 'Treasurer', image: anshul },
+    { name: 'Jayant Mandal', role: 'Joint Secretary', image: jayant },
+    { name: 'Ramya Akalankam', role: 'Convenor', image: ramya },
+    { name: 'Rupali Kumari', role: 'Co Convenor', image:rupali },
+    { name: 'Kartikeya', role: 'Editor-In-Chief', image: kartikeya },
+    { name: 'Md Toufeeque Khan', role: 'Tech Head', image: toufeeque },
+    { name: 'Kirthika S', role: 'General Secretary', image: kirthika},
+    { name: 'Deepsika Bishoye ', role: 'Publicity Head', image: deepsika },
+     { name: 'Anshika Goswami', role: 'Fest Head', image: anshika},
+    { name: 'Arnab Banerjee', role: 'Sponsorship Head', image: aranb },
+    { name: 'Sanjib Maity', role: 'Logistics Head', image: sanjib},
+    { name: 'K Pranesh Rao', role: 'Operations Head', image: pranesh },
+    { name: 'MMSS Manikanta', role: 'PR & Outreach Head', image: pranesh },
+    { name: 'Kumar Shankar', role: 'ATH Head', image: sankar },
+    { name: 'Sivala Rishita', role: 'WebD Head', image: rishita },
+    { name: 'Harshada Pawar ', role: 'Ideation Head', image: harshada},
+    { name: 'Sarmistha Naskar ', role: 'Corporate Communication Head', image: sarmistha},
   ];
   return (
     <section id="team" className="py-16 sm:py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-10 sm:mb-16">
           <h3 className="text-fire-red font-bold uppercase tracking-widest text-sm mb-3 sm:mb-4">The Architects</h3>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display italic">Meet the Members</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display italic">Meet The Core Members</h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           {members.map((member, i) => (
@@ -331,9 +371,13 @@ const Footer = () => (
           <div className="flex gap-3 sm:gap-4 mb-6 sm:mb-8">
             <a href="https://www.instagram.com/radionitroz.nitdgp" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-fire-red transition-colors touch-manipulation" aria-label="Instagram"><Instagram size={18} /></a>
             <a href="https://www.linkedin.com/company/radio-nitroz-nitdgp" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-fire-red transition-colors touch-manipulation" aria-label="LinkedIn"><Linkedin size={18} /></a>
+           
             <a href="https://www.facebook.com/radionitroz.nitdgp" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-fire-red transition-colors touch-manipulation" aria-label="Facebook"><Facebook size={18} /></a>
+          <a href="https://www.radionitroz.in/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-fire-red transition-colors touch-manipulation" aria-label="Website">
+  <Globe size={18} />
+</a>
           </div>
-          <p className="text-gray-500 text-sm break-all">https://www.radionitroz.in/</p>
+          
         </div>
       </div>
       <div className="pt-8 sm:pt-12 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6 text-gray-600 text-xs uppercase tracking-widest font-bold text-center sm:text-left">
