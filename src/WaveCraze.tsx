@@ -231,7 +231,7 @@ const EventCard = ({ title, category, icon: Icon, image, link }: EventCardProps)
 
 const Events = () => {
   const events = [
-    { title: 'Glam It Up', category: '', icon: Music, image: glamit, link: 'https://forms.gle/your-glam-form' },
+    { title: 'Glam It Up', category: '', icon: Music, image: glamit, link: 'https://docs.google.com/forms/d/e/1FAIpQLScbnBsa4Q6ApAH1TM-UYq8CEvxShfQ7TiHUJ9JW7xQOa9JSew/viewform?usp=header' },
     { title: 'TalentX', category: '', icon: Zap, image: talentxImg, link: 'https://docs.google.com/forms/d/e/1FAIpQLSdsSbAuMgzJKYlJ56c5IZhr5Hd-MhhLFR2jcfIi6MSriYGLrQ/viewform?usp=header' },
   ];
   return (
