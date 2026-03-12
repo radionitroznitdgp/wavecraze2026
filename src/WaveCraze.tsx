@@ -317,7 +317,7 @@ const Team = () => {
     { name: 'Arnab Banerjee', role: 'Sponsorship Head', image: aranb },
     { name: 'Sanjib Maity', role: 'Logistics Head', image: sanjib},
     { name: 'K Pranesh Rao', role: 'Operations Head', image: pranesh },
-    { name: 'MMSS Manikanta', role: 'PR & Outreach Head', image: pranesh },
+    { name: 'MMSS Manikanta', role: 'PR & Outreach Head', image: mmss },
     { name: 'Kumar Shankar', role: 'ATH Head', image: sankar },
     { name: 'Sivala Rishita', role: 'WebD Head', image: rishita },
     { name: 'Harshada Pawar ', role: 'Ideation Head', image: harshada},
