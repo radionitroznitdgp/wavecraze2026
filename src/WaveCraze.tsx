@@ -311,7 +311,7 @@ const Team = () => {
     { name: 'Rupali Kumari', role: 'Co Convenor', image:rupali },
     { name: 'Kartikeya', role: 'Editor-In-Chief', image: kartikeya },
     { name: 'Md Toufeeque Khan', role: 'Tech Head', image: toufeeque },
-    { name: 'Kirthika S', role: 'General Secretary', image: kirthika},
+    { name: 'Kirthika S', role: 'Event Head', image: kirthika},
     { name: 'Deepsika Bishoye ', role: 'Publicity Head', image: deepsika },
      { name: 'Anshika Goswami', role: 'Fest Head', image: anshika},
     { name: 'Arnab Banerjee', role: 'Sponsorship Head', image: aranb },
